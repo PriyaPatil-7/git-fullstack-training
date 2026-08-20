@@ -1,8 +1,3 @@
+## Customer API
 
-## Order Feature
-
-I am developing a Order feature.
-
-## Payment Feature
-
-I am developing a payment feature
+I am developing a Customer API using ASP.NET Core.
