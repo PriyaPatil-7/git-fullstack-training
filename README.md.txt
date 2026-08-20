@@ -1,3 +1,3 @@
-## Product Feature
+## Payment Feature
 
-I am developing a product feature.
+I am developing a payment feature.
