@@ -1,3 +1,3 @@
-## Login Feature
+## Product Feature
 
-I am developing a login feature.
+I am developing a product feature.
