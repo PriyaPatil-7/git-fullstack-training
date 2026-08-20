@@ -1,5 +1,3 @@
-# Git Training
+## Login Feature
 
-This is my first Git practice project.
-
-I am learning Git for my .NET and Angular development.
+I am developing a login feature.
