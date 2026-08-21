@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\GitTraining.Api.props" />
-</Project>

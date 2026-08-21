@@ -22,10 +22,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore .NET dependencies
-        run: dotnet restore backend/GitTraining.Api/GitTraining.Api.csproj
+        run: dotnet restore backend/GitTraining.Api.Tests/GitTraining.Api.Tests.csproj
 
       - name: Build .NET API
         run: dotnet build backend/GitTraining.Api/GitTraining.Api.csproj --no-restore
+
+      - name: Run .NET tests
+        run: dotnet test backend/GitTraining.Api.Tests/GitTraining.Api.Tests.csproj
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
