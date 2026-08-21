@@ -22,10 +22,10 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore .NET dependencies
-        run: dotnet restore backend/GitTraining.Api.Tests/GitTraining.Api.Tests.csproj
+        run: dotnet restore backend/GitTraining.sln
 
       - name: Build .NET API
-        run: dotnet build backend/GitTraining.Api/GitTraining.Api.csproj --no-restore
+        run: dotnet build backend/GitTraining.sln --no-restore
 
       - name: Run .NET tests
         run: dotnet test backend/GitTraining.Api.Tests/GitTraining.Api.Tests.csproj
