@@ -34,7 +34,7 @@ jobs:
         run: dotnet publish backend/GitTraining.Api/GitTraining.Api.csproj -c Release -o publish/api
 
       - name: Upload .NET API artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: gittraining-api
           path: publish/api
