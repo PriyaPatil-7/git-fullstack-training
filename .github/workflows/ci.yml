@@ -30,6 +30,15 @@ jobs:
       - name: Run .NET tests
         run: dotnet test backend/GitTraining.Api.Tests/GitTraining.Api.Tests.csproj
 
+      - name: Publish .NET API
+        run: dotnet publish backend/GitTraining.Api/GitTraining.Api.csproj -c Release -o publish/api
+
+      - name: Upload .NET API artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gittraining-api
+          path: publish/api
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
